@@ -6,9 +6,16 @@
 {% block login_widget %}
 {% endblock %}
 
+{% block stylesheet %}
+{{ super() }}
+<link rel="stylesheet" href="{{ static_url("css/cuahsi-style.css") }}" type="text/css"/>
+{% endblock %}
+
 {% block main %}
 
-{% include "tou.html" %}
+<div class='tou'>
+    {% include "tou.html" %}
+</div>
 
 {% block login %}
 <div id="login-main" class="container">
