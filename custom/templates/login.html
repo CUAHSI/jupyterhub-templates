@@ -8,6 +8,8 @@
 
 {% block main %}
 
+{% include tou.html %}
+
 {% block login %}
 <div id="login-main" class="container">
 {% if custom_html %}
@@ -69,7 +71,6 @@
 </div>
 {% endblock login %}
 
-{% include tou.html %}
 
 {% endblock %}
 
