@@ -9,7 +9,6 @@
 {% block stylesheet %}
 {{ super() }}
 <link rel="stylesheet" href="{{ static_url("custom/css/cuahsi-style.css") }}" type="text/css"/>
-<script src="{{ static_url("custom/js/cuahsi-login.js") }}"></script>
 {% endblock %}
 
 {% block main %}
@@ -100,5 +99,5 @@ if (window.location.protocol === "http:") {
   warning.className = warning.className.replace(/\bhidden\b/, '');
 }
 </script>
-
+<script src="{{ static_url("custom/js/cuahsi-login.js") }}"></script>
 {% endblock %}
