@@ -1,4 +1,10 @@
 
 .tou {
     margin: 25px;
+    height: 400px;
+    overflow: auto;
+    white-space: pre-wrap;
+    padding: 15px;
+    border-color: black;
+    border-style: solid;
 }
