@@ -1,5 +1,8 @@
 $(document).ready ( function(){
 
-console.log('loaded');
+    $('#chk_tou').on('change', function() {
+	console.log('checked');
+
+    });
    
 });

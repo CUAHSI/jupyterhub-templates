@@ -26,13 +26,14 @@
 {% elif login_service %}
 <div class="service-login">
     <!-- CUAHSI TOU -->
+    <h3>Terms of Use</h3>
     <div class='tou'>{% include "tou.html" %}</div>
     <br>
     <!-- TOU Agreement Checkbox -->
     <input type="checkbox" id="chk_tou" name="chk_tou">
     <label for="chk_tou"> I agree to the terms of use.</label><br>
     <br>
-  <a role="button" class='btn btn-jupyter btn-lg' href='{{authenticator_login_url}}'>
+  <a role="button" id='btn-login' class='btn btn-jupyter btn-lg' href='{{authenticator_login_url}}'>
     Sign in with {{login_service}}
   </a>
 </div>
