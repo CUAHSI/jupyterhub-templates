@@ -1,7 +1,13 @@
 $(document).ready ( function(){
-
-    $('#chk_tou').on('change', function() {
-	console.log('checked');
+    
+    // disable the sign-in button
+    $('#btn-login').addClass('disabled')
+    $('#chk-tou').on('change', function() {
+	if ( $('#chk_tou').is(':checked') ) {
+	    $('#btn-login').addClass('disabled')
+	} else {
+	    $('#btn-login').removeClass('disabled')
+	}
 
     });
    
