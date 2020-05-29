@@ -5,6 +5,7 @@
     overflow: auto;
     white-space: pre-wrap;
     padding: 15px;
-    border-color: black;
-    border-style: solid;
+/*    border-color: black;
+    border-style: solid; */
+    text-align: left
 }
