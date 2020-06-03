@@ -1,13 +1,18 @@
 
 .tou {
-    margin: 25px;
+    margin: auto 10%;
     height: 400px;
     overflow: auto;
     white-space: pre-wrap;
     padding: 15px;
-    text-align: left
+    text-align: left;
+    line-height: 1px;
 }
-
+.service-login hr {
+    height: 2px;
+    background-color: #2287BA;
+    color: #2287BA; /* old IE */
+}
 .announcement {
     background-color: #f37524;
     padding: 10px;
@@ -15,3 +20,4 @@
     margin-bottom: 10px;
     color: white;
 }
+
