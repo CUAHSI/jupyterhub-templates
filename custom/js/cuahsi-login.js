@@ -3,10 +3,12 @@ $(document).ready ( function(){
     // disable the sign-in button
     $('#btn-login').addClass('disabled')
     $('#chk-tou').on('change', function() {
-	if ( !$('#chk_tou').is(':checked') ) {
-	    $('#btn-login').addClass('disabled')
+	if ( this.checked ) {
+	    // enable the sign in button
+	    $('#btn-login').removeClass('disabled');
 	} else {
-	    $('#btn-login').removeClass('disabled')
+	    // disable the sign in button
+	    $('#btn-login').addClass('disabled');
 	}
 
     });
